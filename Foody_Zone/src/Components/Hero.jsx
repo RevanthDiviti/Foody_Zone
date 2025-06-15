@@ -33,6 +33,21 @@ const HeroSection = styled.div`
   /* gap: 24px; */
   padding: 32px;
   box-sizing: border-box;
+  @media(max-width:870px){
+    display: flex;
+    flex-direction: column;
+   gap : 20px;
+   height: 100%;
+   width: 100%;
+  }
+  @media(max-width:1160px){
+   grid-template-columns: repeat(2, 1fr); // 3 columns
+  }
+  @media (max-width: 360px) {
+    width: 400px;
+    height: 100%;
+    margin-top: -10px;
+  }
 `;
 
 const Card = styled.div`

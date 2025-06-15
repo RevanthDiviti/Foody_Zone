@@ -48,7 +48,27 @@ const HeaderSection = styled.div`
     border-radius: 5px;
     border: 1px solid red;
     color: white;
+    font-weight: 400;
     background: transparent;
+  }
+  input::placeholder{
+    color: white;
+    opacity: 1;
+  }
+  @media (max-width: 870px) {
+    /* flex-direction: column; */
+    .logo_searchBox {
+      flex-direction: column;
+    }
+    input {
+      margin-top: 20px;
+      width: 200px;
+      height: 50px;
+      padding: 15px;
+    }
+  }
+  @media (max-width: 360px) {
+    width: 400px;
   }
 `;
 
@@ -67,5 +87,14 @@ const Categories = styled.div`
     width: auto;
     border-radius: 5px;
     padding: 6px 12px;
+  }
+  @media (max-width: 870px) {
+    ul {
+      margin: 0;
+      margin-right: 30px;
+    }
+  }
+  @media (max-width: 360px) {
+    width: 400px;
   }
 `;
